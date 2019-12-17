@@ -1,0 +1,23 @@
+{
+  "name": "sass-flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasserKassem989979/sass-flexbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasserKassem989979/sass-flexbox/issues"
+  },
+  "homepage": "https://github.com/YasserKassem989979/sass-flexbox#readme",
+  "dependencies": {
+    "sass": "^1.23.7"
+  }
+}

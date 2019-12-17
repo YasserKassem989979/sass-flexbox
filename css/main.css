@@ -1,0 +1,42 @@
+:root {
+  --primary: #4E48EA;
+  --primary-light: #544FFF;
+  --primary-dark: #221AE5;
+  --complemantry:#E4EA48;
+  --grey-light-1: rgb(250, 249, 249);
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

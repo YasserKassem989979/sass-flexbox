@@ -122,27 +122,57 @@
 }
 
 .sidebar{
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+
     &__nav{
 
     }
 
     &__list{
-
+        list-style: none;
+        font-size: 1.4rem;
     }
 
     &__item{
-        
+        margin: 1rem 0;
+        position: relative;
     }
 
-    &__link{
+    &__item::before{
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        background-color: var(--primary);
+        transform: scaleY(0);
+        transition: transform 0.2s ,width 0.4s 0.2s;
+    }
 
+    &__item:hover::before,
+    &__item--active::before{
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__link:link,
+    &__link:visited{
+        text-decoration: none;
+        color: var(--grey-light-1);
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        z-index: 10;
+        position: relative;
     }
 
     &__icon{
         width: 2.5rem;
         height: 2.5rem;
-        fill: #fff;
+        fill: currentColor;
+        margin-right:2rem;
     }
 }
 

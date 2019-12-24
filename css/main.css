@@ -63,6 +63,7 @@ body {
 .main {
   flex: 1;
   background-color: #fff;
+  min-height: 60rem;
 }
 
 .logo {
@@ -168,12 +169,46 @@ body {
 }
 
 .sidebar {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+}
+.sidebar__list {
+  list-style: none;
+  font-size: 1.4rem;
+}
+.sidebar__item {
+  margin: 1rem 0;
+  position: relative;
+}
+.sidebar__item::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  background-color: var(--primary);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s 0.2s;
+}
+.sidebar__item:hover::before, .sidebar__item--active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.sidebar__link:link, .sidebar__link:visited {
+  text-decoration: none;
+  color: var(--grey-light-1);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  z-index: 10;
+  position: relative;
 }
 .sidebar__icon {
   width: 2.5rem;
   height: 2.5rem;
-  fill: #fff;
+  fill: currentColor;
+  margin-right: 2rem;
 }
 
 .legacy {

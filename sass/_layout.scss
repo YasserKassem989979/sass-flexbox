@@ -1,0 +1,32 @@
+.container{
+max-width: 140rem;
+min-height: 50rem;
+margin: 0 auto;
+background-color: var(--grey-light-1);
+}
+
+.header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.content{
+display: flex;
+}
+
+.sidebar{
+flex: 0 0 17%;
+background-color: var(--grey-dark-1);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.main{
+flex: 1;
+background-color: #fff;
+}

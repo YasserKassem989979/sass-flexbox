@@ -1,14 +1,17 @@
 
 :root{
---primary: #4E48EA;
---primary-light: #544FFF;
---primary-dark: #221AE5;
---complemantry :#E4EA48;
-
---grey-light-1: rgb(250, 249, 249);
---grey-light-2: #f4f2f2;
---grey-light-3: #f0eeee;
---grey-light-4: #ccc
+    --primary: #eb2f64;
+    --primary-light: #FF3366;
+    --primary-dark: #BA265D;
+    
+    --grey-light-1: #faf9f9;
+    --grey-light-2: #f4f2f2;
+    --grey-light-3: #f0eeee;
+    --grey-light-4: #ccc;
+    
+    --grey-dark-1: #333;
+    --grey-dark-2: #777;
+    --grey-dark-3: #999;
 }
 
 
@@ -32,14 +35,5 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
-    // background-image: linear-gradient(to right bottom,var(--grey-light-1), var(--grey-light-2));
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-h1{
-    color: var(--primary);
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 1rem;
-}
